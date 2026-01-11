@@ -10,7 +10,9 @@ class Person:
 
 def create_person_list(people: list) -> list:
     people_list = [
-        Person(name=person.get("name"), age=person.get("age")) for person in people
+        Person(
+            name=person.get("name"), age=person.get("age")
+        ) for person in people
     ]
 
     for i, person in enumerate(people):
